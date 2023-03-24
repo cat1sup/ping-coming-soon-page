@@ -1,0 +1,233 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 80px 20px 0px 20px;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.launch {
+    color: hsl(0, 0%, 59%);
+    font-size: 50px;
+}
+
+.subscribe {
+    font-size: 20px;
+}
+
+.fix {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.notify {
+    display: flex;
+    justify-content: space-around;
+    border-color: hsl(223, 100%, 88%);
+    border-style: solid;
+    border-radius: 25px;
+}
+
+.text-error {
+    display: block;
+    color: red;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.notify-casette input:focus {
+    outline: 0;
+    border-color: #777;
+
+}
+
+.notify-casette {
+    border-radius: 25px;
+    padding: 1rem;
+    width: 20rem;
+    border: none;
+    outline: none;
+}
+
+.notify-casette input {
+    border-style: none;
+}
+
+.notify.success {
+    border-color: green;
+    border-style: solid;
+}
+
+.notify.error {
+    border-color: red;
+    border-style: solid;
+}
+
+.notify-button {
+    border-radius: 25px;
+    padding: 1rem 3.3rem 1rem 3.3rem;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    cursor: pointer;
+    border-style: none;
+    font-size: 15px;
+    align-self: baseline;
+    margin-left: 12px;
+}
+
+.notify-button:hover {
+    cursor: pointer;
+    background-color: hsl(223, 58%, 41%);
+}
+
+.image {
+    height: 25rem;
+    width: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 15px;
+    pointer-events: none;
+
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    width: 9rem;
+
+}
+
+.icons-prop {
+    color: hsl(223, 87%, 63%);
+    border-radius: 15px;
+    height: 25px;
+    width: 25px;
+    color: hsl(223, 87%, 63%);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-prop:hover {
+    cursor: pointer;
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+    border-radius: 15px;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.copyright {
+    font-size: 13px;
+    color: hsl(0, 0%, 59%);
+    padding: 0;
+    margin: 0;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 10px;
+    text-align: center;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    padding: 5px;
+}
+
+.attribution a {
+    color: white;
+    text-decoration: none;
+}
+
+::placeholder {
+    color: hsl(223, 100%, 88%);
+    opacity: 1;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .image {
+        height: 30vh;
+        width: 100%;
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .picture {
+        height: 30vh;
+        width: auto;
+    }
+
+    .notify-button {
+        width: 20rem;
+    }
+
+    .launch {
+        font-size: xx-large
+    }
+
+    .ping {
+        padding: 0px 10px 10px 10px;
+    }
+
+    .subscribe {
+        font-size: large;
+    }
+}
+
+/* make it no being able to copy text or image
